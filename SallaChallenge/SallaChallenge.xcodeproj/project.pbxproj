@@ -30,6 +30,9 @@
 		7F69A9CD2CCD625300CFC939 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9CC2CCD625300CFC939 /* Brand.swift */; };
 		7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9CF2CCD645600CFC939 /* SallaAPIs.swift */; };
 		7F69A9D42CCD6B8100CFC939 /* BrandRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */; };
+		7F69A9DB2CCD72AF00CFC939 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DA2CCD72AF00CFC939 /* RemoteDataSource.swift */; };
+		7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */; };
+		7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRepo.swift; sourceTree = "<group>"; };
 		7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		7F69A9D62CCD6FC400CFC939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7F69A9DA2CCD72AF00CFC939 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectRemoteDataSource.swift; sourceTree = "<group>"; };
+		7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		7F69A9732CCC233900CFC939 /* SallaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9D92CCD729E00CFC939 /* DataSources */,
 				7F69A9D62CCD6FC400CFC939 /* Info.plist */,
 				7F69A9D22CCD696200CFC939 /* Configs */,
 				7F69A9CE2CCD643D00CFC939 /* Shared */,
@@ -265,6 +272,24 @@
 				7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		7F69A9D92CCD729E00CFC939 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9DC2CCD737500CFC939 /* RemoreDataSorce */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7F69A9DC2CCD737500CFC939 /* RemoreDataSorce */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9DA2CCD72AF00CFC939 /* RemoteDataSource.swift */,
+				7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */,
+				7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */,
+			);
+			path = RemoreDataSorce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +430,9 @@
 				7F69A9772CCC233900CFC939 /* ContentView.swift in Sources */,
 				7F69A9BE2CCD12D900CFC939 /* BrandInfo.swift in Sources */,
 				7F69A9752CCC233900CFC939 /* SallaChallengeApp.swift in Sources */,
+				7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */,
+				7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */,
+				7F69A9DB2CCD72AF00CFC939 /* RemoteDataSource.swift in Sources */,
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
