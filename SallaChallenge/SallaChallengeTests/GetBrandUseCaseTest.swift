@@ -8,7 +8,7 @@
 import XCTest
 @testable import SallaChallenge
 
-final class GetBrand: XCTestCase {
+final class GetBrandUseCaseTest: XCTestCase {
 
     override func setUpWithError() throws {
         InjectedValues[\.brandRepo] = MockBrandRepo()

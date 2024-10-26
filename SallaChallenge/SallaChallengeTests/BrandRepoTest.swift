@@ -8,7 +8,7 @@
 import XCTest
 @testable import SallaChallenge
 
-final class BrandRepo: XCTestCase {
+final class BrandRepoTest: XCTestCase {
     
     let mockRemoteDataSource = MockRemoteDataSource()
 
@@ -24,11 +24,15 @@ final class BrandRepo: XCTestCase {
         let brandRepo = BrandDataRepo()
         do {
             let brandDtp = try await brandRepo.getBrandProducts(url: nil)
-            XCTAssertEqual(mockRemoteDataSource.url.absoluteString, SallaAPIs.getEndpoint(endPoint: .brands).absoluteString)
+            XCTAssertEqual(mockRemoteDataSource.url!.absoluteString, SallaAPIs.getEndpoint(endPoint: .brands).absoluteString)
             let brandDtpPagging = try await brandRepo.getBrandProducts(url: "hhtps://google.com")
-            XCTAssertNotEqual(mockRemoteDataSource.url.absoluteString, SallaAPIs.getEndpoint(endPoint: .brands).absoluteString)
+            XCTAssertNotEqual(mockRemoteDataSource.url!.absoluteString, SallaAPIs.getEndpoint(endPoint: .brands).absoluteString)
+            XCTAssertEqual(mockRemoteDataSource.headers!, SallaAPIs.addSallaHeader())
         }
         catch {
+            guard error as? DecodingError == nil else {
+                return
+            }
             XCTFail("Expected success but got error: \(error)")
         }
     }

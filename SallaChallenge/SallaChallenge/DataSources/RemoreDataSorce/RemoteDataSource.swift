@@ -14,7 +14,7 @@ enum NetworkError: Error {
 class RemoteDataSource: RemoteSource {
     private let session = URLSession.shared
     
-    func makeRequst(url: URL, headers: [String: String]? = nil, body: [String: String]? = nil) async throws -> Data {
+    func makeRequst(url: URL, headers: [String: String]?, body: [String: String]?) async throws -> Data {
         var request = URLRequest(url: url)
         if let headers = headers {
             for header in headers {

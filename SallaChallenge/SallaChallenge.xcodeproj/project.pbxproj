@@ -17,7 +17,7 @@
 		7F69A9A92CCD024900CFC939 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9A82CCD024900CFC939 /* InjectedValues.swift */; };
 		7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AA2CCD026000CFC939 /* Injected.swift */; };
 		7F69A9AD2CCD027400CFC939 /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AC2CCD027400CFC939 /* InjectionKey.swift */; };
-		7F69A9AF2CCD0A3500CFC939 /* GetBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AE2CCD0A3500CFC939 /* GetBrand.swift */; };
+		7F69A9AF2CCD0A3500CFC939 /* GetBrandUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AE2CCD0A3500CFC939 /* GetBrandUseCaseTest.swift */; };
 		7F69A9B32CCD0AE700CFC939 /* MockBrandRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9B22CCD0AE700CFC939 /* MockBrandRepo.swift */; };
 		7F69A9B72CCD0C3400CFC939 /* BrandRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9B62CCD0C3400CFC939 /* BrandRepo.swift */; };
 		7F69A9BC2CCD128500CFC939 /* BrandDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9BB2CCD128500CFC939 /* BrandDTO.swift */; };
@@ -29,10 +29,11 @@
 		7F69A9CB2CCD1C0900CFC939 /* InjectBrandRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9CA2CCD1C0900CFC939 /* InjectBrandRepo.swift */; };
 		7F69A9CD2CCD625300CFC939 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9CC2CCD625300CFC939 /* Brand.swift */; };
 		7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9CF2CCD645600CFC939 /* SallaAPIs.swift */; };
-		7F69A9D42CCD6B8100CFC939 /* BrandRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */; };
+		7F69A9D42CCD6B8100CFC939 /* BrandRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9D32CCD6B8100CFC939 /* BrandRepoTest.swift */; };
 		7F69A9DB2CCD72AF00CFC939 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DA2CCD72AF00CFC939 /* RemoteDataSource.swift */; };
 		7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */; };
 		7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */; };
+		7F69A9E32CCD760A00CFC939 /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E22CCD760A00CFC939 /* MockRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		7F69A9A82CCD024900CFC939 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		7F69A9AA2CCD026000CFC939 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		7F69A9AC2CCD027400CFC939 /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
-		7F69A9AE2CCD0A3500CFC939 /* GetBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrand.swift; sourceTree = "<group>"; };
+		7F69A9AE2CCD0A3500CFC939 /* GetBrandUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrandUseCaseTest.swift; sourceTree = "<group>"; };
 		7F69A9B22CCD0AE700CFC939 /* MockBrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBrandRepo.swift; sourceTree = "<group>"; };
 		7F69A9B62CCD0C3400CFC939 /* BrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRepo.swift; sourceTree = "<group>"; };
 		7F69A9BB2CCD128500CFC939 /* BrandDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDTO.swift; sourceTree = "<group>"; };
@@ -78,12 +79,13 @@
 		7F69A9CA2CCD1C0900CFC939 /* InjectBrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectBrandRepo.swift; sourceTree = "<group>"; };
 		7F69A9CC2CCD625300CFC939 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		7F69A9CF2CCD645600CFC939 /* SallaAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallaAPIs.swift; sourceTree = "<group>"; };
-		7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRepo.swift; sourceTree = "<group>"; };
+		7F69A9D32CCD6B8100CFC939 /* BrandRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRepoTest.swift; sourceTree = "<group>"; };
 		7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		7F69A9D62CCD6FC400CFC939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7F69A9DA2CCD72AF00CFC939 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectRemoteDataSource.swift; sourceTree = "<group>"; };
 		7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSource.swift; sourceTree = "<group>"; };
+		7F69A9E22CCD760A00CFC939 /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +164,8 @@
 			children = (
 				7F69A9B02CCD0A9E00CFC939 /* Mocks */,
 				7F69A9852CCC233A00CFC939 /* SallaChallengeTests.swift */,
-				7F69A9AE2CCD0A3500CFC939 /* GetBrand.swift */,
-				7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */,
+				7F69A9AE2CCD0A3500CFC939 /* GetBrandUseCaseTest.swift */,
+				7F69A9D32CCD6B8100CFC939 /* BrandRepoTest.swift */,
 			);
 			path = SallaChallengeTests;
 			sourceTree = "<group>";
@@ -190,6 +192,7 @@
 		7F69A9B02CCD0A9E00CFC939 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9E12CCD75FC00CFC939 /* DataSorces */,
 				7F69A9B12CCD0AB500CFC939 /* Repos */,
 			);
 			path = Mocks;
@@ -290,6 +293,14 @@
 				7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */,
 			);
 			path = RemoreDataSorce;
+			sourceTree = "<group>";
+		};
+		7F69A9E12CCD75FC00CFC939 /* DataSorces */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9E22CCD760A00CFC939 /* MockRemoteDataSource.swift */,
+			);
+			path = DataSorces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,10 +458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F69A9AF2CCD0A3500CFC939 /* GetBrand.swift in Sources */,
+				7F69A9AF2CCD0A3500CFC939 /* GetBrandUseCaseTest.swift in Sources */,
+				7F69A9E32CCD760A00CFC939 /* MockRemoteDataSource.swift in Sources */,
 				7F69A9862CCC233A00CFC939 /* SallaChallengeTests.swift in Sources */,
 				7F69A9B32CCD0AE700CFC939 /* MockBrandRepo.swift in Sources */,
-				7F69A9D42CCD6B8100CFC939 /* BrandRepo.swift in Sources */,
+				7F69A9D42CCD6B8100CFC939 /* BrandRepoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
