@@ -76,6 +76,8 @@
 		7F69A9CC2CCD625300CFC939 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		7F69A9CF2CCD645600CFC939 /* SallaAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallaAPIs.swift; sourceTree = "<group>"; };
 		7F69A9D32CCD6B8100CFC939 /* BrandRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandRepo.swift; sourceTree = "<group>"; };
+		7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		7F69A9D62CCD6FC400CFC939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		7F69A9732CCC233900CFC939 /* SallaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9D62CCD6FC400CFC939 /* Info.plist */,
 				7F69A9D22CCD696200CFC939 /* Configs */,
 				7F69A9CE2CCD643D00CFC939 /* Shared */,
 				7F69A9C42CCD1B0700CFC939 /* UseCases */,
@@ -259,6 +262,7 @@
 		7F69A9D22CCD696200CFC939 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -449,6 +453,7 @@
 /* Begin XCBuildConfiguration section */
 		7F69A9932CCC233A00CFC939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -512,6 +517,7 @@
 		};
 		7F69A9942CCC233A00CFC939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F69A9D52CCD6E0A00CFC939 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -577,6 +583,7 @@
 				DEVELOPMENT_TEAM = XGKJ97A7LL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SallaChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -586,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sultan.SallaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -606,6 +613,7 @@
 				DEVELOPMENT_TEAM = XGKJ97A7LL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SallaChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -615,7 +623,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Sultan.SallaChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
