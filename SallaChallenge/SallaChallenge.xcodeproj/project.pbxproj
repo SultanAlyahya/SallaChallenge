@@ -14,6 +14,9 @@
 		7F69A9862CCC233A00CFC939 /* SallaChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9852CCC233A00CFC939 /* SallaChallengeTests.swift */; };
 		7F69A9902CCC233A00CFC939 /* SallaChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A98F2CCC233A00CFC939 /* SallaChallengeUITests.swift */; };
 		7F69A9922CCC233A00CFC939 /* SallaChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9912CCC233A00CFC939 /* SallaChallengeUITestsLaunchTests.swift */; };
+		7F69A9A92CCD024900CFC939 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9A82CCD024900CFC939 /* InjectedValues.swift */; };
+		7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AA2CCD026000CFC939 /* Injected.swift */; };
+		7F69A9AD2CCD027400CFC939 /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9AC2CCD027400CFC939 /* InjectionKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		7F69A98B2CCC233A00CFC939 /* SallaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SallaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69A98F2CCC233A00CFC939 /* SallaChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallaChallengeUITests.swift; sourceTree = "<group>"; };
 		7F69A9912CCC233A00CFC939 /* SallaChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallaChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F69A9A82CCD024900CFC939 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
+		7F69A9AA2CCD026000CFC939 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		7F69A9AC2CCD027400CFC939 /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		7F69A9732CCC233900CFC939 /* SallaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9A72CCD023A00CFC939 /* DependencyInjection */,
 				7F69A9742CCC233900CFC939 /* SallaChallengeApp.swift */,
 				7F69A9762CCC233900CFC939 /* ContentView.swift */,
 				7F69A9782CCC233A00CFC939 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				7F69A9912CCC233A00CFC939 /* SallaChallengeUITestsLaunchTests.swift */,
 			);
 			path = SallaChallengeUITests;
+			sourceTree = "<group>";
+		};
+		7F69A9A72CCD023A00CFC939 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9A82CCD024900CFC939 /* InjectedValues.swift */,
+				7F69A9AA2CCD026000CFC939 /* Injected.swift */,
+				7F69A9AC2CCD027400CFC939 /* InjectionKey.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F69A9A92CCD024900CFC939 /* InjectedValues.swift in Sources */,
+				7F69A9AD2CCD027400CFC939 /* InjectionKey.swift in Sources */,
 				7F69A9772CCC233900CFC939 /* ContentView.swift in Sources */,
 				7F69A9752CCC233900CFC939 /* SallaChallengeApp.swift in Sources */,
+				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
