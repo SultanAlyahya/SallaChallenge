@@ -18,22 +18,17 @@ final class GetBrand: XCTestCase {
         
     }
 
-    func testExample() throws {
-
-        let getBrandUseCase = GetBrandUseCase()
-        let brand = getBrandUseCase.run()
-        XCTAssertNil(brand.next)
-        XCTAssertNil(brand.salePrice)
-        XCTAssertEqual(brand.title, "Sultan's brand")
-
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+    func testExample() async throws {
+        do {
+            let getBrandUseCase = GetBrandUseCase()
+            let brand = try await getBrandUseCase.run()
+            XCTAssertNil(brand.nextProductsPage)
+            XCTAssertEqual(brand.product.count, 1)
+            XCTAssertEqual(brand.title, "Sultan's brand")
         }
+        catch {
+            XCTFail("Expected success but got error: \(error)")
+        }
+
     }
 }

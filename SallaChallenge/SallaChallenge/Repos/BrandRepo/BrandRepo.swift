@@ -8,5 +8,5 @@
 import Foundation
 
 protocol BrandRepo {
-    func getBrandProducts(url: String?) -> BrandDTO
+    func getBrandProducts(url: String?) async throws -> BrandDTO
 }
