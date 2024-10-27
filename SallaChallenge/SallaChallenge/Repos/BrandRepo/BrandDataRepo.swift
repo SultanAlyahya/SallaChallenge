@@ -8,7 +8,7 @@
 import Foundation
 
 class BrandDataRepo: BrandRepo {
-    @Injected(\.remoteDataSource) var remoteDataSource
+    @Injected(\.remoteDataSource) private var remoteDataSource
     
     private func deocdeToBrand(data: Data) throws -> BrandDTO {
         let brandDto = try JSONDecoder().decode(BrandDTO.self, from: data)
