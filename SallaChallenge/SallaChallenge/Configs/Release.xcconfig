@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  SallaChallenge
+//
+//  Created by Sultan alyahya on 23/04/1446 AH.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+CURRENCY = SAR
+STORE_IDENTIFIER = 1328842359

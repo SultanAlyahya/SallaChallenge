@@ -10,6 +10,13 @@ import Foundation
 class SallaAPIs {
     private static let baseAPI = "https://api.salla.dev/"
     
+    static func addSallaHeader() -> [String: String] {
+        let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        let currency = Bundle.main.infoDictionary!["CURRENCY"] as! String
+        let storeIdentefier = Bundle.main.infoDictionary!["STORE_IDENTIFIER"] as! String
+        return ["Currency": currency, "AppVersion": appVersion, "Store-Identifier": storeIdentefier]
+    }
+    
     static func getEndpoint(endPoint: EndPoints, queryItems: [URLQueryItem]? = nil) -> URL {
         let urlPath = baseAPI + endPoint.getPath()
         var url = URL(string: urlPath)!
