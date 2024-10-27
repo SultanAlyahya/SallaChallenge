@@ -37,6 +37,8 @@
 		7F69A9E72CCE7EF200CFC939 /* BrandVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */; };
 		7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */; };
 		7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */; };
+		7F69A9EE2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9ED2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift */; };
+		7F69A9F02CCEF40500CFC939 /* BrandViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9EF2CCEF40500CFC939 /* BrandViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandVM.swift; sourceTree = "<group>"; };
 		7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
 		7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		7F69A9ED2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectGetBrandUseCase.swift; sourceTree = "<group>"; };
+		7F69A9EF2CCEF40500CFC939 /* BrandViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,7 @@
 			children = (
 				7F69A9C62CCD1B4A00CFC939 /* GetBrandUseCase.swift */,
 				7F69A9CC2CCD625300CFC939 /* Brand.swift */,
+				7F69A9ED2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift */,
 			);
 			path = GetBrandUseCase;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				7F69A9EA2CCE809800CFC939 /* Components */,
 				7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */,
 				7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */,
+				7F69A9EF2CCEF40500CFC939 /* BrandViewState.swift */,
 			);
 			path = BrandView;
 			sourceTree = "<group>";
@@ -484,9 +490,11 @@
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
 				7F69A9CB2CCD1C0900CFC939 /* InjectBrandRepo.swift in Sources */,
+				7F69A9F02CCEF40500CFC939 /* BrandViewState.swift in Sources */,
 				7F69A9CD2CCD625300CFC939 /* Brand.swift in Sources */,
 				7F69A9B72CCD0C3400CFC939 /* BrandRepo.swift in Sources */,
 				7F69A9BC2CCD128500CFC939 /* BrandDTO.swift in Sources */,
+				7F69A9EE2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

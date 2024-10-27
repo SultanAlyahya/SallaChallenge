@@ -8,29 +8,33 @@
 import SwiftUI
 
 struct BrandView: View {
+    @StateObject var vm = BrandVM()
     let columns = [
            GridItem(.flexible()),
            GridItem(.flexible())
        ]
     var body: some View {
         ScrollView {
-            Text("brand name")
+            Text(vm.state.title)
                 .padding(.vertical ,12)
             Image("brandCover", bundle: .main)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
-            Text("label")
+            Text(vm.state.label)
                 .padding(12)
             
-            Text("Description Description Description Description Description Description Description")
+            Text(vm.state.brandDescription)
                 .padding(.bottom, 8)
                 .multilineTextAlignment(.center)
             
             LazyVGrid(columns: columns, spacing: 8) {
-                ForEach(0..<10) { _ in
-                    ProductCell()
+                ForEach(vm.state.products) { product in
+                    ProductCell(price: product.price, currency: product.currency, name: product.name)
+                        .onAppear{
+                            vm.loadCell()
+                        }
                 }
             }
         }

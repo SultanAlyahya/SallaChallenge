@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ProductCell: View {
     let image: Image = Image("brandCover", bundle: .main)
-    let price: Double = 10.0
-    let currency: String = "SAR"
-    let name: String = "item name"
+    let price: Double
+    let currency: String
+    let name: String
     var body: some View {
         VStack(alignment: .trailing) {
             image
                 .resizable()
                 .aspectRatio(16 / 9, contentMode: .fit)
                 .frame(maxHeight: 150)
-            Text("Item name")
+            Text(name)
                 .padding(.horizontal, 8)
             Spacer()
             Text("\(currency) \(String(format: "%.2f", price))")
@@ -41,5 +41,5 @@ struct ProductCell: View {
 }
 
 #Preview {
-    ProductCell()
+    ProductCell(price: 10.0, currency: "SAR", name: "Item")
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct SallaChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BrandView()
         }
     }
 }
