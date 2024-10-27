@@ -34,6 +34,9 @@
 		7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */; };
 		7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */; };
 		7F69A9E32CCD760A00CFC939 /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E22CCD760A00CFC939 /* MockRemoteDataSource.swift */; };
+		7F69A9E72CCE7EF200CFC939 /* BrandVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */; };
+		7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */; };
+		7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		7F69A9DD2CCD739200CFC939 /* InjectRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectRemoteDataSource.swift; sourceTree = "<group>"; };
 		7F69A9DF2CCD755000CFC939 /* RemoteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSource.swift; sourceTree = "<group>"; };
 		7F69A9E22CCD760A00CFC939 /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
+		7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandVM.swift; sourceTree = "<group>"; };
+		7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
+		7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		7F69A9732CCC233900CFC939 /* SallaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9E42CCE7ECB00CFC939 /* Scenes */,
 				7F69A9D92CCD729E00CFC939 /* DataSources */,
 				7F69A9D62CCD6FC400CFC939 /* Info.plist */,
 				7F69A9D22CCD696200CFC939 /* Configs */,
@@ -303,6 +310,32 @@
 			path = DataSorces;
 			sourceTree = "<group>";
 		};
+		7F69A9E42CCE7ECB00CFC939 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9E52CCE7EDC00CFC939 /* BrandView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7F69A9E52CCE7EDC00CFC939 /* BrandView */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9EA2CCE809800CFC939 /* Components */,
+				7F69A9E62CCE7EF200CFC939 /* BrandVM.swift */,
+				7F69A9E82CCE7EFC00CFC939 /* BrandView.swift */,
+			);
+			path = BrandView;
+			sourceTree = "<group>";
+		};
+		7F69A9EA2CCE809800CFC939 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,11 +472,14 @@
 				7F69A9C22CCD133200CFC939 /* Cursor.swift in Sources */,
 				7F69A9AD2CCD027400CFC939 /* InjectionKey.swift in Sources */,
 				7F69A9772CCC233900CFC939 /* ContentView.swift in Sources */,
+				7F69A9E72CCE7EF200CFC939 /* BrandVM.swift in Sources */,
 				7F69A9BE2CCD12D900CFC939 /* BrandInfo.swift in Sources */,
 				7F69A9752CCC233900CFC939 /* SallaChallengeApp.swift in Sources */,
 				7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */,
 				7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */,
 				7F69A9DB2CCD72AF00CFC939 /* RemoteDataSource.swift in Sources */,
+				7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */,
+				7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */,
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
