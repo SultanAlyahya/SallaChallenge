@@ -9,10 +9,10 @@ import Foundation
 
 
 struct Cursor: Codable {
-    let current: Int
+    let current: String?
     let previous: String?
     let next: String?
-    let count: Int
+    let count: Int?
     
     enum CodingKeys: String, CodingKey {
         case current = "current"

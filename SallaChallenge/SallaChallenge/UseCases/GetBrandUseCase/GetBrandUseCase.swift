@@ -8,12 +8,8 @@
 import Foundation
 
 class GetBrandUseCase {
-    @Injected(\.brandRepo) var brandRepo
-    
-    func getAppVersion() {
-        
-    }
-    
+    @Injected(\.brandRepo) private var brandRepo
+
     func run(page fromURL: String? = nil) async throws -> Brand {
         let brandDto = try await brandRepo.getBrandProducts(url: fromURL)
         let brand = Brand(brandDto: brandDto)

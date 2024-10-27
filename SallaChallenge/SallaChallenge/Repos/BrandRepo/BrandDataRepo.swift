@@ -17,7 +17,8 @@ class BrandDataRepo: BrandRepo {
     
     func getBrandProducts(url: String?) async throws -> BrandDTO {
         let requeatHeaders = SallaAPIs.addSallaHeader()
-        let brandURL = SallaAPIs.getEndpoint(endPoint: .brands, queryItems: nil)
+        let queryItems = [URLQueryItem(name: "page", value: "1"), URLQueryItem(name: "per_page", value: "5")]
+        let brandURL = SallaAPIs.getEndpoint(endPoint: .brands, queryItems: queryItems)
         let data = try await remoteDataSource.makeRequst(url: brandURL, headers: requeatHeaders, body: nil)
         let brandDto = try deocdeToBrand(data: data)
         return brandDto

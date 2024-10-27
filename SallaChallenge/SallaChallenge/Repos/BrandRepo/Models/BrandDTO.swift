@@ -9,7 +9,7 @@ import Foundation
 
 struct BrandDTO: Codable {
     let products: [BrandProduct]
-    let brandInfo: BrandInfo
+    let brandInfo: BrandInfo?
     let cursor: Cursor
     
     enum CodingKeys: String, CodingKey {
