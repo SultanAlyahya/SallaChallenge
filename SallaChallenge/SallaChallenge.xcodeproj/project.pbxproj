@@ -39,6 +39,10 @@
 		7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */; };
 		7F69A9EE2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9ED2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift */; };
 		7F69A9F02CCEF40500CFC939 /* BrandViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9EF2CCEF40500CFC939 /* BrandViewState.swift */; };
+		7F69A9F32CCF02FF00CFC939 /* GetImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9F22CCF02FF00CFC939 /* GetImageUseCase.swift */; };
+		7F69A9F62CCF033E00CFC939 /* ImageRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9F52CCF033E00CFC939 /* ImageRepo.swift */; };
+		7F69A9F82CCF041B00CFC939 /* InjectImageRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9F72CCF041B00CFC939 /* InjectImageRepo.swift */; };
+		7F69A9FA2CCF058200CFC939 /* InjectGetImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9F92CCF058200CFC939 /* InjectGetImageUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		7F69A9ED2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectGetBrandUseCase.swift; sourceTree = "<group>"; };
 		7F69A9EF2CCEF40500CFC939 /* BrandViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewState.swift; sourceTree = "<group>"; };
+		7F69A9F22CCF02FF00CFC939 /* GetImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageUseCase.swift; sourceTree = "<group>"; };
+		7F69A9F52CCF033E00CFC939 /* ImageRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepo.swift; sourceTree = "<group>"; };
+		7F69A9F72CCF041B00CFC939 /* InjectImageRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectImageRepo.swift; sourceTree = "<group>"; };
+		7F69A9F92CCF058200CFC939 /* InjectGetImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectGetImageUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +228,7 @@
 		7F69A9B42CCD0B6600CFC939 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9F42CCF032400CFC939 /* ImageRepo */,
 				7F69A9C32CCD172400CFC939 /* Models */,
 				7F69A9B52CCD0B8700CFC939 /* BrandRepo */,
 			);
@@ -258,6 +267,7 @@
 		7F69A9C42CCD1B0700CFC939 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9F12CCF02EA00CFC939 /* GetImageUseCase */,
 				7F69A9C52CCD1B1500CFC939 /* GetBrandUseCase */,
 			);
 			path = UseCases;
@@ -340,6 +350,24 @@
 				7F69A9EB2CCE80B500CFC939 /* ProductCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		7F69A9F12CCF02EA00CFC939 /* GetImageUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9F22CCF02FF00CFC939 /* GetImageUseCase.swift */,
+				7F69A9F92CCF058200CFC939 /* InjectGetImageUseCase.swift */,
+			);
+			path = GetImageUseCase;
+			sourceTree = "<group>";
+		};
+		7F69A9F42CCF032400CFC939 /* ImageRepo */ = {
+			isa = PBXGroup;
+			children = (
+				7F69A9F52CCF033E00CFC939 /* ImageRepo.swift */,
+				7F69A9F72CCF041B00CFC939 /* InjectImageRepo.swift */,
+			);
+			path = ImageRepo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,9 +510,13 @@
 				7F69A9BE2CCD12D900CFC939 /* BrandInfo.swift in Sources */,
 				7F69A9752CCC233900CFC939 /* SallaChallengeApp.swift in Sources */,
 				7F69A9E02CCD755000CFC939 /* RemoteSource.swift in Sources */,
+				7F69A9F82CCF041B00CFC939 /* InjectImageRepo.swift in Sources */,
 				7F69A9DE2CCD739200CFC939 /* InjectRemoteDataSource.swift in Sources */,
 				7F69A9DB2CCD72AF00CFC939 /* RemoteDataSource.swift in Sources */,
+				7F69A9F62CCF033E00CFC939 /* ImageRepo.swift in Sources */,
+				7F69A9F32CCF02FF00CFC939 /* GetImageUseCase.swift in Sources */,
 				7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */,
+				7F69A9FA2CCF058200CFC939 /* InjectGetImageUseCase.swift in Sources */,
 				7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */,
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,

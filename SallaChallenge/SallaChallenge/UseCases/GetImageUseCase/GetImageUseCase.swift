@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+class GetImageUseCase {
+    @Injected(\.imageRepo) private var imageRepo
+    
+    func run(imageURL: String) async throws -> Data {
+        return try await imageRepo.getImage(imageURL: imageURL)
+    }
+}
