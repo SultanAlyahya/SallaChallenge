@@ -46,6 +46,9 @@
 		7F69A9FD2CCF091500CFC939 /* ProductCellDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9FC2CCF091500CFC939 /* ProductCellDetails.swift */; };
 		7F69AA002CCF0C4100CFC939 /* CacheDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69A9FF2CCF0C4100CFC939 /* CacheDataSource.swift */; };
 		7F69AA022CCF0C7B00CFC939 /* InjectCacheDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA012CCF0C7B00CFC939 /* InjectCacheDataSource.swift */; };
+		7F69AA052CCF10E400CFC939 /* ProductRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA042CCF10E400CFC939 /* ProductRepo.swift */; };
+		7F69AA082CCF11D200CFC939 /* ProductDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA072CCF11D200CFC939 /* ProductDto.swift */; };
+		7F69AA0A2CCF12BA00CFC939 /* InjectProductRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA092CCF12BA00CFC939 /* InjectProductRepo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,9 @@
 		7F69A9FC2CCF091500CFC939 /* ProductCellDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellDetails.swift; sourceTree = "<group>"; };
 		7F69A9FF2CCF0C4100CFC939 /* CacheDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheDataSource.swift; sourceTree = "<group>"; };
 		7F69AA012CCF0C7B00CFC939 /* InjectCacheDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectCacheDataSource.swift; sourceTree = "<group>"; };
+		7F69AA042CCF10E400CFC939 /* ProductRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepo.swift; sourceTree = "<group>"; };
+		7F69AA072CCF11D200CFC939 /* ProductDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDto.swift; sourceTree = "<group>"; };
+		7F69AA092CCF12BA00CFC939 /* InjectProductRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectProductRepo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +240,8 @@
 		7F69A9B42CCD0B6600CFC939 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
+				7F69AA032CCF10BE00CFC939 /* ProductRepo */,
 				7F69A9F42CCF032400CFC939 /* ImageRepo */,
-				7F69A9C32CCD172400CFC939 /* Models */,
 				7F69A9B52CCD0B8700CFC939 /* BrandRepo */,
 			);
 			path = Repos;
@@ -255,17 +261,10 @@
 		7F69A9BA2CCD125800CFC939 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F69A9C12CCD133200CFC939 /* Cursor.swift */,
 				7F69A9BB2CCD128500CFC939 /* BrandDTO.swift */,
 				7F69A9BD2CCD12D900CFC939 /* BrandInfo.swift */,
 				7F69A9BF2CCD12F800CFC939 /* BrandProduct.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7F69A9C32CCD172400CFC939 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7F69A9C12CCD133200CFC939 /* Cursor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,6 +392,24 @@
 				7F69AA012CCF0C7B00CFC939 /* InjectCacheDataSource.swift */,
 			);
 			path = CacheDataSource;
+			sourceTree = "<group>";
+		};
+		7F69AA032CCF10BE00CFC939 /* ProductRepo */ = {
+			isa = PBXGroup;
+			children = (
+				7F69AA062CCF11BC00CFC939 /* Models */,
+				7F69AA042CCF10E400CFC939 /* ProductRepo.swift */,
+				7F69AA092CCF12BA00CFC939 /* InjectProductRepo.swift */,
+			);
+			path = ProductRepo;
+			sourceTree = "<group>";
+		};
+		7F69AA062CCF11BC00CFC939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F69AA072CCF11D200CFC939 /* ProductDto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,12 +561,15 @@
 				7F69A9F32CCF02FF00CFC939 /* GetImageUseCase.swift in Sources */,
 				7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */,
 				7F69A9FA2CCF058200CFC939 /* InjectGetImageUseCase.swift in Sources */,
+				7F69AA082CCF11D200CFC939 /* ProductDto.swift in Sources */,
+				7F69AA052CCF10E400CFC939 /* ProductRepo.swift in Sources */,
 				7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */,
 				7F69AA002CCF0C4100CFC939 /* CacheDataSource.swift in Sources */,
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
 				7F69A9CB2CCD1C0900CFC939 /* InjectBrandRepo.swift in Sources */,
+				7F69AA0A2CCF12BA00CFC939 /* InjectProductRepo.swift in Sources */,
 				7F69A9F02CCEF40500CFC939 /* BrandViewState.swift in Sources */,
 				7F69A9CD2CCD625300CFC939 /* Brand.swift in Sources */,
 				7F69A9B72CCD0C3400CFC939 /* BrandRepo.swift in Sources */,
