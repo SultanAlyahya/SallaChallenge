@@ -16,10 +16,13 @@ struct ProductCell: View {
     let addAction: () -> ()
     var body: some View {
         VStack(alignment: .trailing) {
-            image
-                .resizable()
-                .aspectRatio(16 / 9, contentMode: .fit)
-                .frame(maxHeight: 150)
+            VStack {
+                image
+                    .resizable()
+                    .aspectRatio(1, contentMode: .fit)
+                    .frame(maxHeight: 150)
+            }
+            .frame(maxWidth: .infinity)
             Text(name)
                 .padding(.horizontal, 8)
             Spacer()
@@ -31,7 +34,7 @@ struct ProductCell: View {
             } label: {
                 Text("أضف للسلة")
                     .foregroundStyle(Color.white)
-                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .frame(maxWidth: .infinity, maxHeight: 45)
                     .background(Color.black)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .font(font)
