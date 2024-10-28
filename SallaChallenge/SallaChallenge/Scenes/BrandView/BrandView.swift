@@ -31,7 +31,11 @@ struct BrandView: View {
             
             LazyVGrid(columns: columns, spacing: 8) {
                 ForEach(vm.state.products) { product in
-                    ProductCell(price: product.price, currency: product.currency, name: product.name)
+                    ProductCell(
+                        image: product.cover, 
+                        price: product.price,
+                        currency: product.currency,
+                        name: product.name)
                         .onAppear{
                             vm.loadCell()
                         }

@@ -5,7 +5,7 @@
 //  Created by Sultan alyahya on 25/04/1446 AH.
 //
 
-import SwiftUI
+import Foundation
 
 struct BrandViewState {
     var title = ""
@@ -14,13 +14,4 @@ struct BrandViewState {
     var isBrandLoaded = false
     var brandDescription = ""
     var products = [ProductCellDetails]()
-}
-
-struct ProductCellDetails: Identifiable {
-    let id = UUID()
-    let name: String
-    let specialOffer: Bool
-    let currency: String
-    let price: Double
-    let cover: Image?
 }
