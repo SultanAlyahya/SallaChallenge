@@ -30,6 +30,7 @@ struct ProductView: View {
             .frame(height: 300)
             .cornerRadius(10)
             .padding(.horizontal, 10)
+            .padding(.top, 70)
             Spacer()
             ZStack(alignment: .topLeading) {
                 HStack {
@@ -38,10 +39,10 @@ struct ProductView: View {
                     Spacer()
                     VStack(alignment: .trailing) {
                         Text(product.name)
-                            .font(.sallaMedium(size: 30))
+                            .font(.sallaMedium(size: 22))
                             .padding(.vertical, 12)
                         Text("\(product.currency) \(String(format: "%.2f", product.price))")
-                            .font(.sallaMedium(size: 20))
+                            .font(.sallaMedium(size: 18))
                             .padding(.horizontal, 8)
                     }
                 }
@@ -58,14 +59,18 @@ struct ProductView: View {
                     .offset(x: 100, y: -25)
                
             }
+            .background(.white)
             
         }
         .ignoresSafeArea()
+        .background(Color.primaryBackGround)
     }
        
     let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
 }
 
 #Preview {
-    ProductView(product: ProductCellDetails(name: "hello", specialOffer: false, currency: "SAR", price: 10.0, cover:  Image("brandCover", bundle: .main)))
+    NavigationStaskSupport {
+        ProductView(product: ProductCellDetails(name: "hello", specialOffer: false, currency: "SAR", price: 10.0, cover:  Image("brandCover", bundle: .main)))
+    }
 }

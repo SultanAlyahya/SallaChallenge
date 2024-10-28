@@ -351,9 +351,9 @@
 		7F69A9E42CCE7ECB00CFC939 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7F69AA1A2CCFB02A00CFC939 /* NavigationStaskSupport.swift */,
 				7F69AA0B2CCF13FB00CFC939 /* productView */,
 				7F69A9E52CCE7EDC00CFC939 /* BrandView */,
-				7F69AA1A2CCFB02A00CFC939 /* NavigationStaskSupport.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
