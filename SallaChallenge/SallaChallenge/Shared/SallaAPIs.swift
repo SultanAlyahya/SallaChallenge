@@ -19,11 +19,12 @@ class SallaAPIs {
     
     static func getEndpoint(endPoint: EndPoints, queryItems: [URLQueryItem]? = nil) -> URL {
         let urlPath = baseAPI + endPoint.getPath()
-        var url = URL(string: urlPath)!
+        var url = URLComponents(string: urlPath)!
+       
         if let queryItems = queryItems {
-            url.append(queryItems: queryItems)
+            url.queryItems = queryItems
         }
-        return url
+        return url.url!
     }
 }
 

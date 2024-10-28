@@ -6,5 +6,10 @@
 	<string>$(CURRENCY)</string>
 	<key>STORE_IDENTIFIER</key>
 	<string>$(STORE_IDENTIFIER)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DINNextLTArabic-Regular.ttf</string>
+		<string>Estedad-Medium.ttf</string>
+	</array>
 </dict>
 </plist>
