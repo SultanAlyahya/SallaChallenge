@@ -54,6 +54,7 @@
 		7F69AA132CCF1A0E00CFC939 /* DINNextLTArabic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F69AA112CCF19E000CFC939 /* DINNextLTArabic-Regular.ttf */; };
 		7F69AA142CCF1A1100CFC939 /* Estedad-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */; };
 		7F69AA162CCF1AA500CFC939 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA152CCF1AA500CFC939 /* Font.swift */; };
+		7F69AA192CCFAACE00CFC939 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA182CCFAACE00CFC939 /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		7F69AA112CCF19E000CFC939 /* DINNextLTArabic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTArabic-Regular.ttf"; sourceTree = "<group>"; };
 		7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Estedad-Medium.ttf"; sourceTree = "<group>"; };
 		7F69AA152CCF1AA500CFC939 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7F69AA182CCFAACE00CFC939 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +431,7 @@
 		7F69AA0B2CCF13FB00CFC939 /* productView */ = {
 			isa = PBXGroup;
 			children = (
+				7F69AA172CCFAA9500CFC939 /* Components */,
 				7F69AA0C2CCF141300CFC939 /* ProductView.swift */,
 			);
 			path = productView;
@@ -441,6 +444,14 @@
 				7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7F69AA172CCFAA9500CFC939 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7F69AA182CCFAACE00CFC939 /* CircleButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +613,7 @@
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
+				7F69AA192CCFAACE00CFC939 /* CircleButton.swift in Sources */,
 				7F69AA0F2CCF16F400CFC939 /* RoundedCorner.swift in Sources */,
 				7F69A9CB2CCD1C0900CFC939 /* InjectBrandRepo.swift in Sources */,
 				7F69AA0A2CCF12BA00CFC939 /* InjectProductRepo.swift in Sources */,
@@ -789,6 +801,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -819,6 +832,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
