@@ -89,9 +89,9 @@ class BrandVM: ObservableObject {
     
     @MainActor func setNewBrand(brand: Brand) {
         state.coverURL = brand.logoURL ?? ""
-        state.title = brand.title ?? ""
-        state.label = brand.label ?? ""
-        state.brandDescription = brand.description ?? ""
+        state.title = brand.title ?? "Armani"
+        state.label = brand.label ?? "Giorgio Armani"
+        state.brandDescription = brand.description ?? "Giorgio Armani S.p.A. (pronounced [ˈdʒordʒo arˈmaːni]), commonly known as Armani, is an Italian luxury fashion house founded in Milan by Giorgio Armani which designs, manufactures, distributes and retails haute couture, ready-to-wear, leather goods, shoes, accessories, and home interiors"
         for product in brand.product {
             state.products.append(ProductCellDetails(
                 name: product.name,
