@@ -55,6 +55,7 @@
 		7F69AA142CCF1A1100CFC939 /* Estedad-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */; };
 		7F69AA162CCF1AA500CFC939 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA152CCF1AA500CFC939 /* Font.swift */; };
 		7F69AA192CCFAACE00CFC939 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA182CCFAACE00CFC939 /* CircleButton.swift */; };
+		7F69AA1B2CCFB02A00CFC939 /* NavigationStaskSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA1A2CCFB02A00CFC939 /* NavigationStaskSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Estedad-Medium.ttf"; sourceTree = "<group>"; };
 		7F69AA152CCF1AA500CFC939 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		7F69AA182CCFAACE00CFC939 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		7F69AA1A2CCFB02A00CFC939 /* NavigationStaskSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStaskSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 			children = (
 				7F69AA0B2CCF13FB00CFC939 /* productView */,
 				7F69A9E52CCE7EDC00CFC939 /* BrandView */,
+				7F69AA1A2CCFB02A00CFC939 /* NavigationStaskSupport.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				7F69A9F32CCF02FF00CFC939 /* GetImageUseCase.swift in Sources */,
 				7F69A9EC2CCE80B500CFC939 /* ProductCell.swift in Sources */,
 				7F69A9FA2CCF058200CFC939 /* InjectGetImageUseCase.swift in Sources */,
+				7F69AA1B2CCFB02A00CFC939 /* NavigationStaskSupport.swift in Sources */,
 				7F69AA082CCF11D200CFC939 /* ProductDto.swift in Sources */,
 				7F69AA052CCF10E400CFC939 /* ProductRepo.swift in Sources */,
 				7F69A9E92CCE7EFC00CFC939 /* BrandView.swift in Sources */,
