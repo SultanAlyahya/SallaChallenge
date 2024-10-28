@@ -49,6 +49,11 @@
 		7F69AA052CCF10E400CFC939 /* ProductRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA042CCF10E400CFC939 /* ProductRepo.swift */; };
 		7F69AA082CCF11D200CFC939 /* ProductDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA072CCF11D200CFC939 /* ProductDto.swift */; };
 		7F69AA0A2CCF12BA00CFC939 /* InjectProductRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA092CCF12BA00CFC939 /* InjectProductRepo.swift */; };
+		7F69AA0D2CCF141300CFC939 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA0C2CCF141300CFC939 /* ProductView.swift */; };
+		7F69AA0F2CCF16F400CFC939 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA0E2CCF16F400CFC939 /* RoundedCorner.swift */; };
+		7F69AA132CCF1A0E00CFC939 /* DINNextLTArabic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F69AA112CCF19E000CFC939 /* DINNextLTArabic-Regular.ttf */; };
+		7F69AA142CCF1A1100CFC939 /* Estedad-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */; };
+		7F69AA162CCF1AA500CFC939 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F69AA152CCF1AA500CFC939 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +121,11 @@
 		7F69AA042CCF10E400CFC939 /* ProductRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepo.swift; sourceTree = "<group>"; };
 		7F69AA072CCF11D200CFC939 /* ProductDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDto.swift; sourceTree = "<group>"; };
 		7F69AA092CCF12BA00CFC939 /* InjectProductRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectProductRepo.swift; sourceTree = "<group>"; };
+		7F69AA0C2CCF141300CFC939 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		7F69AA0E2CCF16F400CFC939 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		7F69AA112CCF19E000CFC939 /* DINNextLTArabic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTArabic-Regular.ttf"; sourceTree = "<group>"; };
+		7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Estedad-Medium.ttf"; sourceTree = "<group>"; };
+		7F69AA152CCF1AA500CFC939 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +176,7 @@
 		7F69A9732CCC233900CFC939 /* SallaChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				7F69AA102CCF19CD00CFC939 /* Fonts */,
 				7F69A9E42CCE7ECB00CFC939 /* Scenes */,
 				7F69A9D92CCD729E00CFC939 /* DataSources */,
 				7F69A9D62CCD6FC400CFC939 /* Info.plist */,
@@ -292,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				7F69A9CF2CCD645600CFC939 /* SallaAPIs.swift */,
+				7F69AA0E2CCF16F400CFC939 /* RoundedCorner.swift */,
+				7F69AA152CCF1AA500CFC939 /* Font.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -334,6 +347,7 @@
 		7F69A9E42CCE7ECB00CFC939 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7F69AA0B2CCF13FB00CFC939 /* productView */,
 				7F69A9E52CCE7EDC00CFC939 /* BrandView */,
 			);
 			path = Scenes;
@@ -410,6 +424,23 @@
 				7F69AA072CCF11D200CFC939 /* ProductDto.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7F69AA0B2CCF13FB00CFC939 /* productView */ = {
+			isa = PBXGroup;
+			children = (
+				7F69AA0C2CCF141300CFC939 /* ProductView.swift */,
+			);
+			path = productView;
+			sourceTree = "<group>";
+		};
+		7F69AA102CCF19CD00CFC939 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7F69AA112CCF19E000CFC939 /* DINNextLTArabic-Regular.ttf */,
+				7F69AA122CCF19E000CFC939 /* Estedad-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +549,8 @@
 			files = (
 				7F69A97C2CCC233A00CFC939 /* Preview Assets.xcassets in Resources */,
 				7F69A9792CCC233A00CFC939 /* Assets.xcassets in Resources */,
+				7F69AA142CCF1A1100CFC939 /* Estedad-Medium.ttf in Resources */,
+				7F69AA132CCF1A0E00CFC939 /* DINNextLTArabic-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +579,7 @@
 				7F69A9C02CCD12F800CFC939 /* BrandProduct.swift in Sources */,
 				7F69A9C72CCD1B4A00CFC939 /* GetBrandUseCase.swift in Sources */,
 				7F69A9C22CCD133200CFC939 /* Cursor.swift in Sources */,
+				7F69AA0D2CCF141300CFC939 /* ProductView.swift in Sources */,
 				7F69A9AD2CCD027400CFC939 /* InjectionKey.swift in Sources */,
 				7F69A9772CCC233900CFC939 /* ContentView.swift in Sources */,
 				7F69A9E72CCE7EF200CFC939 /* BrandVM.swift in Sources */,
@@ -568,10 +602,12 @@
 				7F69A9D02CCD645600CFC939 /* SallaAPIs.swift in Sources */,
 				7F69A9AB2CCD026000CFC939 /* Injected.swift in Sources */,
 				7F69A9C92CCD1BA000CFC939 /* BrandDataRepo.swift in Sources */,
+				7F69AA0F2CCF16F400CFC939 /* RoundedCorner.swift in Sources */,
 				7F69A9CB2CCD1C0900CFC939 /* InjectBrandRepo.swift in Sources */,
 				7F69AA0A2CCF12BA00CFC939 /* InjectProductRepo.swift in Sources */,
 				7F69A9F02CCEF40500CFC939 /* BrandViewState.swift in Sources */,
 				7F69A9CD2CCD625300CFC939 /* Brand.swift in Sources */,
+				7F69AA162CCF1AA500CFC939 /* Font.swift in Sources */,
 				7F69A9B72CCD0C3400CFC939 /* BrandRepo.swift in Sources */,
 				7F69A9BC2CCD128500CFC939 /* BrandDTO.swift in Sources */,
 				7F69A9EE2CCEF39E00CFC939 /* InjectGetBrandUseCase.swift in Sources */,
