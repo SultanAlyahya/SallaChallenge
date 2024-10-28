@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductCell: View {
-    let image: Image = Image("brandCover", bundle: .main)
+    let image: Image
     let price: Double
     let currency: String
     let name: String
@@ -41,5 +41,5 @@ struct ProductCell: View {
 }
 
 #Preview {
-    ProductCell(price: 10.0, currency: "SAR", name: "Item")
+    ProductCell(image: Image("brandCover", bundle: .main), price: 10.0, currency: "SAR", name: "Item")
 }

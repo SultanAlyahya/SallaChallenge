@@ -9,7 +9,8 @@ import SwiftUI
 
 
 class BrandVM: ObservableObject {
-    @Injected(\.getBrandUseCase) var getBrandUseCase
+    @Injected(\.getBrandUseCase) private var getBrandUseCase
+    @Injected(\.getImageUseCase) private var getimageUseCase
     @Published var state = BrandViewState()
     var nextProductURL: String? = nil
     var cellLoaded = 0
@@ -50,14 +51,38 @@ class BrandVM: ObservableObject {
         }
     }
     
+    func getProductImage(productID: UUID, coverURL: String) async {
+        do {
+            let imageData = try await getimageUseCase.run(imageURL: coverURL)
+            if let image = UIImage(data: imageData) {
+                await setProductImage(image: Image(uiImage: image), productID: productID)
+            }
+        }
+        catch {
+            print("error: \(error)")
+        }
+    }
+    
+    @MainActor func setProductImage(image: Image, productID: UUID) {
+        if let index = state.products.firstIndex(where: { $0.id == productID }) {
+            state.products[index].cover = image
+        }
+    }
+    
     @MainActor func addNewProducts(brand: Brand) {
         for product in brand.product {
-            state.products.append(ProductCellDetails(
+            let productDetails = ProductCellDetails(
                 name: product.name,
                 specialOffer: product.specialOffer,
                 currency: product.currency,
                 price: product.price,
-                cover: nil))
+                cover: Image("brandCover", bundle: .main))
+            state.products.append(productDetails)
+            if let coverURL = product.coverURL {
+                Task(priority: .userInitiated) {
+                    await getProductImage(productID: productDetails.id, coverURL: coverURL)
+                }
+            }
         }
         nextProductURL = brand.nextProductsPage
     }
@@ -73,7 +98,7 @@ class BrandVM: ObservableObject {
                 specialOffer: product.specialOffer,
                 currency: product.currency,
                 price: product.price,
-                cover: nil))
+                cover: Image("brandCover", bundle: .main)))
         }
         state.isBrandLoaded = true
         nextProductURL = brand.nextProductsPage
