@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ProductCell: View {
+    @Binding var font: Font
     let image: Image
     let price: Double
     let currency: String
     let name: String
+    let addAction: () -> ()
     var body: some View {
         VStack(alignment: .trailing) {
             image
@@ -25,13 +27,14 @@ struct ProductCell: View {
                 .padding(.horizontal, 8)
            
             Button {
-                print("add to cart")
+                addAction()
             } label: {
                 Text("أضف للسلة")
                     .foregroundStyle(Color.white)
                     .frame(maxWidth: .infinity, maxHeight: 50)
                     .background(Color.black)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .font(font)
             }
         }
         .frame(minHeight: 300)
@@ -41,5 +44,5 @@ struct ProductCell: View {
 }
 
 #Preview {
-    ProductCell(image: Image("brandCover", bundle: .main), price: 10.0, currency: "SAR", name: "Item")
+    ProductCell(font: .constant(Font.system(size: 18)), image: Image("brandCover", bundle: .main), price: 10.0, currency: "SAR", name: "Item", addAction:{})
 }
